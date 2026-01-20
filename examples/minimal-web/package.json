@@ -1,0 +1,10 @@
+{
+  "name": "@nebula/example-minimal-web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Minimal web example for Nebula Core.",
+  "scripts": {
+    "dev": "echo \"Not yet implemented\"",
+    "build": "echo \"Not yet implemented\""
+  }
+}

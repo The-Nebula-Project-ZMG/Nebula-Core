@@ -1,0 +1,10 @@
+{
+  "name": "@nebula/example-electron-shell",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Electron shell example for Nebula Core.",
+  "scripts": {
+    "dev": "echo \"Not yet implemented\"",
+    "build": "echo \"Not yet implemented\""
+  }
+}
