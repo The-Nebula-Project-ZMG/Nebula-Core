@@ -1,6 +1,10 @@
+export type GlyphResolutionOptions = {
+  themeId?: string;
+};
+
 export type GlyphProvider = {
   id: string;
-  getGlyph(actionId: string): string | null;
+  getGlyph(actionId: string, themeId?: string): string | null;
 };
 
 export function createGlyphRegistry() {
@@ -16,9 +20,10 @@ export function createGlyphRegistry() {
     list() {
       return Array.from(providers.values());
     },
-    resolve(actionId: string) {
+    resolve(actionId: string, options?: GlyphResolutionOptions) {
+      const themeId = options?.themeId;
       for (const provider of providers.values()) {
-        const glyph = provider.getGlyph(actionId);
+        const glyph = provider.getGlyph(actionId, themeId);
         if (glyph) return glyph;
       }
       return null;
