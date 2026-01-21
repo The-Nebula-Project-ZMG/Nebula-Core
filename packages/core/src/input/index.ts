@@ -8,6 +8,7 @@ export type InputAction = {
 
 export type InputGlyph = {
   actionId: string;
+  themeId?: string;
   glyph: string;
 };
 
